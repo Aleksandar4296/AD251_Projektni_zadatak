@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+
 
 
 
@@ -25,6 +27,7 @@
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
+
 
 @media (min-width: 800px) {
     :root {
@@ -388,6 +391,7 @@ header {
     padding: 2.5em 0 0.5em 0;
     font-size: var(--fs-h3);
     border-top: 3px solid var(--clr-light);
+    height: 450px;
 
 }
 
@@ -452,4 +456,69 @@ header {
     top: 50%;
     left: 50%;
     margin: -35px 0 0 -35px;
+}
+.footerdiv{
+width: 65%;
+float: left;
+}
+.aside{
+    width: 30%;
+    
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+}
+.aside li{
+    font-size: 0.5em;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+}
+
+.aside a:hover{
+text-decoration: underline;
+
+}
+
+
+.btn2:hover{
+text-decoration: underline;
+  
+}
+
+
+iframe{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.movingtext{
+    font-size: 5vw;
+	text-decoration: none;
+	font-weight: 100;
+	letter-spacing: -3px;
+	animation: weight 2s infinite;
+	animation-delay: calc(var(--char-index) * 150ms);
+  margin: 100px;
+	padding: 100px;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+@keyframes weight {
+	from {
+		font-weight: 100;
+	}
+
+	50% {
+		font-weight: 900;
+	}
+
+	to {
+		font-weight: 100;
+	}
 }
